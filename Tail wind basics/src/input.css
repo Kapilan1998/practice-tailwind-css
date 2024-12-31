@@ -6,4 +6,11 @@
     background-color: aqua;
     color: red;
     font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@layer components{
+    .click-btn{
+        @apply bg-red-500 sm:bg-gray-600 md:bg-yellow-500 lg:bg-green-500 p-4 m-4 rounded border-4 border-blue-500
+    }
 }

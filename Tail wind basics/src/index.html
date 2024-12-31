@@ -1,12 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+US+Modern+Guides&family=Playwrite+ZA+Guides&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
 </head>
-<body>
+
+<body class="text-blue-700 bg-white dark:bg-black">
+
     <h1 class="text-3xl font-bold underline changeToRed">Welcome to learing tail wind css platform</h1>
-</body>
+
+    <!-- typography -->
+    <p class="font-sans">This text uses sans-serif font family</p>
+    <p class="font-serif">This text uses serif font family</p>
+    <p class="font-mono">This text uses mono font family</p>
+    <p class="font-myNewFont">This text uses play wright font family</p>
+    <p class="font-rubikVinyl">This text uses Rubik font family</p>
+    <p class="font-kapilan">This text uses sixtyfour font family</p>
+
+
+    <!-- size -->
+    <!-- 
+     <p class="text-xs">Extra small Text</p>
+      <p class="text-sm">Small Text</p>
+      <p class="text-base">Base Text</p>
+      <p class="text-lg">Large Text</p>
+      <p class="text-xl">Extra Large Text</p> 
+      -->
+    <!-- responsive -->
+    <!-- <p class="text-base md:text-lg lg:text-xl">Responsive Font Text</p> -->
+
+    <!-- extra large size -->
+    <!-- 
+      <p class="text-2xl">Size is in 2 xl</p>
+       <p class="text-3xl">Size is in 3 xl</p>
+       <p class="text-8xl">Size is in 8 xl</p>
+       -->
+    <!-- here from 2xl to 9xl sizes were predefined, so i added newly 11xl size to config and used here -->
+    <!-- <p class="text-11xl">Size is in 11 xl</p> -->
+    <!--
+        <span class="text-4xl font-bold">Sample <span class="font-thin">Title</span></span> <br>
+       <span class="font-bold">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+       when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+       It was <span class="font-extrabold">popularised in the 1980s</span> with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+       <span class="leading-kapilan-45">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual 
+        teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. 
+        Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise,
+         except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</span> 
+         -->
+
+    <!-- colors -->
+    <div class="h-8 bg-green-100"></div>
+    <div class="h-8 bg-green-500"></div>
+    <div class="h-8 bg-green-800"></div>
+    <div class="h-8 bg-color-kapilan"></div>
+    <div class="text-color-kapilan font-extrabold">This is custom text color</div>
+
+    <!-- padding ,margin, border, hover-->
+    <button
+        class="text-white bg-blue-800 p-2 m-3 border-4 border-yellow-600 rounded-2xl hover:bg-purple-700 hover:text-green-600 hover:font-extrabold hover:text-2xl active:text-4xl active:text-amber-700">Click
+        me</button>
+
+    <!-- layout -->
+    <!-- mx-auto - align center of screen -->
+    <div class="container relative border-4 border-red-700 mt-10 mx-auto rounded-lg">
+        <h1 class="text-green-700 p-2 font-kapilan text-xl">Tail wind CSS</h1>
+        <p class="p-2 mb-6 text-red-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti optio ut
+            veritatis similique debitis? Numquam autem nulla laboriosam quos consectetur sequi! Repudiandae aperiam
+            natus alias praesentium voluptate aspernatur quam saepe.</p>
+        <!-- <div class="flex justify-center"> -->
+            <button
+                class="absolute bottom-0 transform translate-y-10 text-black bg-green-800 p-2 m-3 border-4 border-yellow-600 rounded-2xl hover:bg-orange-700 hover:text-green-600 hover:font-extrabold hover:text-2xl mb-4">Enroll
+                now
+            </button>
+        <!-- </div> -->
+    </div>
+
+    <!-- responsive classes -->
+     <!-- here for small screen device - gray color.   for medium device screen-green color.  for large screen- red color -->
+    <div class="bg-gray-300 mt-10 ml-3 md:bg-green-300 lg:bg-red-500">
+        <p class="text-lg">Background color changes on sreen size</p>
+     </div>
+
+
+     <!-- flexbox -->
+      here for small screen flex-col and for medium screen col-row
+<div class="container flex flex-col md:flex-row">
+    <div class="bg-green-400">Content 1</div>
+    <div class="bg-green-400">Content 2</div>
+    <div class="bg-green-400">Content 3</div>
+</div>
+
+justify can be used when flex-row is set. can't use for flex-col
+justify-center = align center (row wise)
+justify-start = align left
+justify-end = align right
+justify-between = left SPACE center SPACE right  align
+justify-around = keep equal spaces between blocks  
+
+<div class="container flex flex-row justify-around mt-5">
+    <div class="bg-pink-400">Block 1</div>
+    <div class="bg-pink-400">Block 2</div>
+    <div class="bg-pink-400">Block 3</div>
+</div>
+
+items can be used when flex-col is used. Can't be use for flex-row
+items- start = left align (column wise)
+items- center = center align
+items- end = right align
+<div class="container flex flex-col items-center mt-5">
+    <div class="bg-purple-400">BOX 1</div>
+    <div class="bg-purple-400">BOX 2</div>
+    <div class="bg-purple-400">BOX 3</div>
+</div>
+
+flex-grow to all 3 = then all 3 equally shares width
+if flex-grow is applied to 1 block, then that block holds major space
+<div class="container flex flex-row mt-5">
+    <div class="bg-orange-400 flex-grow">BOX 1</div>
+    <div class="bg-cyan-400 flex-grow">BOX 2</div>
+    <div class="bg-gray-400 flex-grow">BOX 3</div>
+</div>
+
+<div class="container flex flex-row mt-5">
+    <div class="bg-orange-400 flex-1">BOX 1</div>
+    <div class="bg-cyan-400 flex-1">BOX 2</div>
+    <div class="bg-gray-400 flex-1">BOX 3</div>
+</div>
+
+
+<!-- grid layout -->
+<div class="container grid grid-cols-2 gap-2 mt-5">
+    <div class="bg-green-400 flex-1">BOX 1</div>
+    <div class="bg-yellow-400 flex-1">BOX 2</div>
+    <div class="bg-blue-400 flex-1">BOX 3</div>
+    <div class="bg-gray-400 flex-1">BOX 4</div>
+    <div class="bg-cyan-400 flex-1">BOX 5</div>
+    <div class="bg-pink-400 flex-1">BOX 6</div>
+</div>
+
+<!-- darkmode -->
+<button class="text-xl bg-slate-900 text-white p-4 m-4 rounded dark:bg-slate-300 dark:text-green-500">Enable dark mode</button>
+<br><br>
+
+<BUTton class="click-btn">HELLO</BUTton>
+<BUTton class="click-btn">Friends</BUTton>
+<BUTton class="click-btn">Welcome</BUTton>
+    </body>
+
 </html>
