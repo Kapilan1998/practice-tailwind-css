@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.changeToRed{
+    background-color: aqua;
+    color: red;
+    font-size: 50px;
+}
